@@ -49,7 +49,7 @@ namespace SQLServer_ConsoleApp
                     Console.Write("Descartando e criando banco de dados 'SampleDB' ... ");
                     String sql = "DROP DATABASE IF EXISTS [SampleDB]; CREATE DATABASE [SampleDB]";
                     using (SqlCommand command = new SqlCommand(sql, connection))
-                    {
+                    { 
                         command.ExecuteNonQuery();
                         Console.WriteLine("Feito.");
                     }
